@@ -1,0 +1,26 @@
+.field {
+    background-color: #000;
+    position: absolute;
+    border: 2px solid green;
+    z-index: 3;
+}
+
+.field-inner {
+    display: none;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+
+.active {
+    /* background-color: blue; */
+    border: 2px solid red;
+}
+
+.active + .field-inner {
+    display: block;
+}
+
+.checked {
+    display: none;
+}
